@@ -1,4 +1,6 @@
 version: 1.0.{build}
+install:
+  - nuget restore RemoteClient
 image: Visual Studio 2017 RC
 build:
   verbosity: minimal
