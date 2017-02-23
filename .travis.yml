@@ -1,2 +1,7 @@
 language: csharp
-solution: RemoteClient.sln
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.0.0-preview4-004233
+script:
+  - ./build.sh --quiet verify
